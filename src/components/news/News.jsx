@@ -27,8 +27,8 @@ export function News({ id, showAll = false }) {
     setData(items);
   }, []);
 
-  if (error) return <p>Villa kom upp: {error}</p>;
-  if (loading || !data) return <p>Sæki gögn...</p>;
+  if (error) return <p className={s.news__error}>Villa kom upp: {error}</p>;
+  if (loading || !data) return <p className={s.news__loading}>Sæki gögn...</p>;
 
   const news = showAll ? data.items : data.items.slice(0, 5);
 

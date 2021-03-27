@@ -36,7 +36,9 @@ export function NewsList() {
     <div className={s.newslist}>
       {data &&
         data.map((category) => (
-          <News key={category.id} id={category.id} title={category.title} />
+          <div className={s.newslist__cards}>
+            <News key={category.id} id={category.id} title={category.title} />
+          </div>
         ))}
     </div>
   );

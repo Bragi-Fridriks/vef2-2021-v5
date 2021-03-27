@@ -1,12 +1,13 @@
 .news {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    background-color: #faf5db;
-    border-radius: 1%;
-    border: 0.01rem solid #000;
+    font-family: Arial, Helvetica, sans-serif;    
+
+    &__card {
+        background-color: #faf5db;
+        border-radius: 1%;
+        border: 0.01rem solid #000;
+        margin: 1rem;
+        padding: 1rem;
+    }
 
     &__links {
         padding-top: 1rem;
@@ -21,5 +22,15 @@
     &__nlink {
         color: inherit;
         font-size: larger;
+    }
+
+    &__error {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    &__loading {
+        margin: 1rem;
+        padding: 1rem;
     }
 }

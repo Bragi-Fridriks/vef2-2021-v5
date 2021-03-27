@@ -1,4 +1,9 @@
 .newslist {
-    width: 30%;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    &__cards {
+        width: 35rem;
+    }
 }
